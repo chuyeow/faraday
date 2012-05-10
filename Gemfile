@@ -17,7 +17,7 @@ end
 platforms :ruby do
   gem 'patron', '~> 0.4', '> 0.4.1'
   gem 'typhoeus', '~> 0.3.3'
-  gem 'curb', '~> 0.8'
+  gem 'curb', '0.7.14'
 end
 
 platforms :jruby do
