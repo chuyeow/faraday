@@ -25,6 +25,9 @@ module Faraday
         case env[:method]
         when :head
           client.http_head
+        when :put
+          client.put_data = read_body(env)
+          client.http :PUT
         else
           client.http env[:method].to_s.upcase.to_sym
         end
